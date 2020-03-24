@@ -1,0 +1,14 @@
+void testp(){
+  for(int exim=0; exim<nExIMean; exim++) {
+    auto gex = agrDRTSC[exim];
+    cout << "" << endl;
+    double x, y;
+    for (int i=0; i < gex.GetN(); i++)
+    {
+    gex.GetPoint(i, x, y);
+    if (x>0){
+    cout << adExIMean[exim] << "\t" << x << "\t" << y << endl;
+        }
+    }
+  }
+}
